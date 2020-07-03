@@ -1,0 +1,10 @@
+<%= flash[:message] %>
+<%= form_for @user do |f| %>
+    <%= f.label :name %>
+    <%= f.textfield :name %>
+    <%= f.label :password %>
+    <%= f.textfield :password %>
+    <%= f.label :password_confirmation %>
+    <%= f.textfield :password_confirmation %>
+    <%= f.submit %>
+<% end %>
