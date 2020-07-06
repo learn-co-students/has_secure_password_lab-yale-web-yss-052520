@@ -10,6 +10,7 @@ class UsersController < ApplicationController
         session[:user_id] = @user.id
         redirect_to controller: 'welcome', action: 'home'
     end
+    
     def user_params
         params.require(:user).permit(:name, :password, :password_confirmation)
     end
